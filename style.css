@@ -764,8 +764,8 @@ body p {
 .overlay-form {
   position: absolute;
   top: 0;
-  left: 10%;
-  right: 10%;
+  left: 10px;
+  right: 10px;
   bottom: auto;
   /* width: 100vw;
   height: 100vh; */
@@ -776,6 +776,7 @@ body p {
   overflow: hidden;
   box-sizing: border-box;
 }
+
 
 
 

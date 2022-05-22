@@ -764,8 +764,8 @@ body p {
 .overlay-form {
   position: absolute;
   top: 0;
-  left: 25%;
-  right: 25%;
+  left: 10%;
+  right: 10%;
   bottom: auto;
   /* width: 100vw;
   height: 100vh; */

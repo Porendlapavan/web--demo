@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AGILE Ac</title>
+  <title>Agile Acccounting</title>
   <link rel="icon" href="icon.png">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,8 +14,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
-  <script src="app.js">
-  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
@@ -32,169 +32,191 @@
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
     integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
 </head>
+<!-- -------------------g form------------------- -->
+<div class="overlay-form" style=" -webkit-background-composite: padding;">
+  <div class="  over1" style="background-color:rgb(233, 243, 252);padding: 15px;">
+    <div style="text-align:center">
+      <h1 style="font-weight:bold;">Book a chat</h1>
+      <p>To find out how agile-accounting can assist your firm, please enter your details and one
+        of our local
+        account
+        managers
+        will contact you at a time that suits your schedule.</p>
+    </div>
+    <form name="google-sheet">
+      <div class="close-btn" onclick="toggleForm()">&times;</div>
+      <div class="form-element">
+        <label>First Name: <span class="input-icon"><i class="fa fa-user"></i></span></label>
+
+        <input name="First Name" type="text" class="form-control" placeholder="Enter first name" required>
+      </div>
+      <div class="form-element">
+        <label>Last Name: <span class="input-icon"><i class="fa fa-user"></i></span></label>
+
+        <input name="Last Name" type="text" class="form-control" placeholder="Enter last name" required>
+      </div>
+      <div class="form-element">
+        <label>Email: <span class="input-icon"><i class="fa fa-envelope"></i></span></label>
+
+        <input name="Email" type="email" class="form-control" placeholder="Enter Email" required>
+      </div>
+      <div class="form-element">
+        <label>Phone number:<span class="input-icon"><i class="fas fa-phone-alt"></i></span></label>
+
+        <input name="Phone number" type="number" class="form-control" placeholder="Enter Phone number" required>
+      </div>
+      <div class="form-element ">
+        <button>Book a chat</button>
+      </div>
+    </form>
+  </div>
+</div>
 
 <body>
-  <div style="background-color:rgb(53, 53, 82);height: 1rem;"></div>
+  <div style="background-color:#4a0466;height: 1rem;"></div>
+
   <header class="main_header">
     <div class="container">
       <div class="outer-flex">
         <img src="logoagilel.png" style="max-width: 100px; padding-left:10px;border-radius: 0px; max-height: 80px;">
-
         <nav class="navbar">
-          <a href="#" class="toggle-buttons" style="color: rgb(53, 53, 82); z-index:1;">
+          <a href="#" class="toggle-buttons" style="color: #4a0466; z-index:1;">
             <i class="fas fa-bars"></i></a>
           <div class="navbar-links">
+
             <ul>
-              <li><a style="font-size:0.7rem;" href="#">company <i class="arrow down"></i></a>
-                <ul style="z-index:1; background-color: aqua;">
-                  <li style="border-radius:15px 15px 0 0;"><a href="The Agile ac difference.html">The AGILE Ac
+              <a href="#" class="close-button">&times;</a>
+              <li><a style="font-size:0.7rem;text-align: left;" class="colr" href="#">company <i
+                    class="arrow down"></i></a>
+                <ul class="text" style="z-index:1;">
+                  <li><a style="text-align: left;" href="The Agile ac difference.html">The Agile Accounting
                       difference</a></li>
-                  <li><a href="meetourtalent.html">Meet our talent</a></li>
-                  <li><a href="who_we_are.html">Who we are</a></li>
-                  <li><a href="contact us.html">contact us</a></li>
-                  <li style="border-radius:0 0 15px 15px"><a href=""><i class='fas fa-external-link-alt'></i> AGILE Ac
+                  <li><a style="text-align: left;" href="meetourtalent.html">Meet our talent</a></li>
+                  <li><a style="text-align: left;" href="who_we_are.html">Who we are</a></li>
+                  <li><a style="text-align: left;" href="contact us.html">contact us</a></li>
+                  <li><a style="text-align: left;" href=""><i class='fas fa-external-link-alt'></i> AGILE Ac
                       careers</a></li>
                 </ul>
               </li>
-              <li><a style="font-size:0.7rem; width: auto;" href="#">Solutions <i class="arrow down"></i></a>
-                <ul style="z-index:1;background-color: aqua;">
-                  <li style="border-radius:15px 15px 0 0"><a href="accountant.html">Accountant</a></li>
-                  <li><a href="Bookkeeper.html">Book keeper</a></li>
-                  <li><a href="administrator.html">Administrator</a></li>
-                  <li><a href="cpa.html">CPA</a></li>
-                  <li><a href="virtualassisant.html">Virtual assistant</a></li>
-                  <li><a href="">Locally Trained Talent</a></li>
-                  <li style="border-radius:0 0 15px 15px"><a href="All solutions.html">All solutions</a></li>
+              <li><a style="font-size:0.7rem; width: auto;text-align:left;" class="colr" href="#">Solutions <i
+                    class="arrow down" style="font-size: smaller;"></i></a>
+                <ul class="text" style="z-index:1;">
+                  <li><a style="text-align: left;" href="accountant.html">Accountant</a></li>
+                  <li><a style="text-align: left;" href="Bookkeeper.html">Book keeper</a></li>
+                  <li><a style="text-align: left;" href="administrator.html">Administrator</a></li>
+                  <li><a style="text-align: left;" href="cpa.html">CPA</a></li>
+                  <li><a style="text-align: left;" href="virtualassisant.html">Virtual assistant</a></li>
+                  <li><a style="text-align: left;" href="local trained talent.html">Locally Trained Talent</a></li>
+                  <li><a style="text-align: left;" href="All solutions.html">All solutions</a></li>
                 </ul>
               </li>
-              <li><a style="font-size:0.7rem;" href="#">Resources <i class="arrow down"></i></a>
-                <ul style="z-index:1; background-color: white;">
-                  <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12" style="width:100%;">
-                      <li
-                        style="border-radius:15px 15px 0 0;text-align: center;font-weight: bold;color: indigo;font-size: 0.7rem;">
-                        News and Events
-                      </li>
-                      <li><a href="">Announcements</a></li>
-                      <li style="text-align: center;font-weight: bold;color: indigo;font-size: 0.7rem;">
-                        Education</li>
-                      <li><a href="">Blog</a></li>
-                      <li><a href="">Podcasts</a></li>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 ">
-                      <li
-                        style="border-radius:15px 15px 0 0;text-align: center;font-weight: bold;color: indigo;font-size: 0.7rem;">
-                        Free Tools
-                      </li>
-                      <li><a href="">Book a strategy session</a></li>
-                      <li><a href="">Outsourcing checklist</a></li>
-                      <li><a href="">Remote team report</a></li>
-                      <li><a href="">Virtual assistant report</a></li>
-                      <li><a href="">Retain and grow talent guide</a></li>
-                      <li style="border-radius:0 0 15px 15px"><a href="">Scale and grow your accounting firm</a></li>
-                    </div>
-                  </div>
+              <li><a style="font-size:0.7rem;text-align:left;" href="#" class="colr">Resources <i
+                    class="arrow down"></i></a>
+                <ul class="text" style="z-index:1;">
+
+
+                  <li style="text-align:left;  ;font-weight: bold;color: rgb(174, 242, 16);font-size: 0.7rem;">
+                    News and Events
+                  </li>
+                  <li><a style="text-align: left;  ;" href="">Announcements</a></li>
+                  <li style="text-align: left;font-weight: bold;  ;color: rgb(174, 242, 16);font-size: 0.7rem;">
+                    Education</li>
+                  <li><a style="text-align: left;  ;" href="bolgs.html">Blog</a></li>
+                  <li><a style="text-align: left;  ;" href="">Podcasts</a></li>
+
+
+                  <li style="border-radius:0px 0px 0 0;text-align: left;  ;font-weight:
+                      bold;color:rgb(174, 242, 16);font-size: 0.7rem;">
+                    Free Tools
+                  </li>
+                  <li><a style="text-align: left;  ;" href="book a statagy session.html">Book a
+                      strategy session</a></li>
+                  <li><a style="text-align: left;  ;" href="checklist.html">Outsourcing checklist</a>
+                  </li>
+                  <li><a style="text-align: left;  ;" href="remote accounting team.html">Remote team
+                      report</a></li>
+                  <li><a style="text-align: left;  ;" href="">Virtual assistant report</a></li>
+                  <li><a style="text-align: left;  ;" href="retainandgrow.html">Retain and grow talent
+                      guide</a></li>
+                  <li><a style="text-align: left;  ;" href="scaleandgrow.html">Scale and grow your
+                      accounting
+                      firm</a></li>
+
                 </ul>
               </li>
               <li>
-                <label class="topnov" style="background-color:lightblue;">
+                <label class="topnov" style="background:none;">
                   <span class="screen-reader-text"></span>
                   <input type="search" class="search-field" placeholder="Search" value="" name="s" title="Search for:"
-                    style="border-radius:0.7rem;padding:2px; width: 6rem;height:22px;background-color:lightblue;font-size: 0.6rem;">
+                    style="border-radius:0.7rem;padding:2px; width:
+                    5rem;height:22px;background:none;font-size: 0.6rem;background-color: white;">
                 </label>
                 <button type="submit" class="search-submit topnov" value="Search"
-                  style="border:none;outline:none;background-color:lightblue;"><span class="sr-only">Search</span>
+                  style="border:none;outline:none;background:none"><span class="sr-only">Search</span>
                   <img src="https://toaglobal.com/wp-content/themes/generatepress_child/images/search.svg"
-                    aria-hidden="true" alt="Search icon" style="height: 15px;">
+                    aria-hidden="true" alt="Search icon" style="height: 15px;color:white;">
                 </button>
               </li>
             </ul>
           </div>
         </nav>
-
       </div>
 
-      <div class="boxes ">
-        <div class="box" id=" header_heading">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12" id=" header_heading"
+          style="align-self: center;align-content: center;">
 
-          <h1 style="color: rgb(53, 53, 82);padding-bottom: 20px;">Great accounting people make great businesses</h1>
-          <p style="font-size: 1rem;padding-bottom: 20px;" id="header_para">
-            AGILE Ac is an outsourcing business, 100% for the accounting industry.We supply great offshore people to
+          <h1 style="color: #4a0466;padding-bottom: 20px;">Great accounting people make great businesses</h1>
+          <p style="    font-size: 1.2rem;padding-bottom: 10px;" id="header_para">
+            Agile Accounting is an outsourcing business, 100% for the accounting industry. We supply great offshore
+            people to
             over 250 firms in the US and Canada. In fact, the accounting industry are the only clients we serve.
           </p>
-          <div class="overlay-form">
-            <div style="text-align:center">
-              <h1 style="font-weight:bold;">Book a chat</h1>
-              <p>To find out how TOA can assist your firm, please enter your details and one of our local account
-                managers
-                will contact you at a time that suits your schedule.</p>
-            </div>
-            <form name="google-sheet">
-              <div class="close-btn" onclick="toggleForm()">&times;</div>
-              <div class="form-element">
-                <label>First Name: <span class="input-icon"><i class="fa fa-user"></i></span></label>
-
-                <input name="First Name" type="text" class="form-control" placeholder="Enter your first name" required>
-              </div>
-              <div class="form-element">
-                <label>Last Name: <span class="input-icon"><i class="fa fa-user"></i></span></label>
-
-                <input name="Last Name" type="text" class="form-control" placeholder="Enter your last name" required>
-              </div>
-              <div class="form-element">
-                <label>Email: <span class="input-icon"><i class="fa fa-envelope"></i></span></label>
-
-                <input name="Email" type="email" class="form-control" placeholder="Enter your email" required>
-              </div>
-              <div class="form-element">
-                <label>Phone number:<span class="input-icon"><i class="fas fa-phone"></i></span></label>
-
-                <input name="Phone number" type="number" class="form-control" placeholder="Enter your Phone number"
-                  required>
-              </div>
-              <div class="form-element">
-                <button>book a chat</button>
-              </div>
-            </form>
-
+          <div style="margin-bottom:2rem;" class="button1"><button class="buttonstyl" onclick="toggleForm()"><span>Book
+                a
+                chat</span></button>
           </div>
-          <div><button class="buttonstyl" onclick="toggleForm()">Book a chat</button></div>
         </div>
-        <div class="box">
-          <img id="header_image1" src="https://toaglobal.com/wp-content/uploads/2021/07/hero-image.png.webp"
-            width="100%">
+        <div class="col-lg-6 col-md-12 col-sm-12 " style="text-align: center;align-self: flex-end;">
+          <img id="header_image1" src="https://i.postimg.cc/tJDPH27h/headerimage1.png"
+            style="max-width:370px;height:50%;">
         </div>
       </div>
+
     </div>
   </header>
 
   <div class="header2">
     <div class="container">
       <h1 class="textcol">600+ firms started their growth here</h1>
-      <p style="font-size: 1rem;" id=" header_para">Want advice on how to start? Get a free outsourced accounting
+      <p id=" header_para">Want advice on how to start? Get a free outsourced accounting
         strategy developed
-        from insights from more than 600 AGILE Ac clients worldwide.</p>
-      <p style="font-size: 1rem;">Learn how our clients use offshore teams to grow their firms.</p>
-      <button class="buttonstyl">Get free outsourcing strategy</button>
+        from insights from more than 600 Agile Accounting clients worldwide.</p>
+      <p>Learn how our clients use offshore teams to grow their firms.</p>
+
+      <a href="book a statagy session.html"><button class="buttonstyl"><span>Get free outsourcing
+            strategy</span></button></a>
     </div>
   </div>
   <div class="header3">
     <div class="container">
       <h1 class="textcol">Supporting 600+ accounting firms across US, Australia, Canada and New Zealand</h1>
-      <p style="font-size: 1rem;">If you need to supplement your team, we do the hiring, the upskilling and the
+      <p style="    font-size: 1.2rem;">If you need to supplement your team, we do the hiring, the upskilling and the
         resource management,so you
         can
         focus on your clients. And we are local, our account managers and leadership team are on the ground in every
         country we serve.</p>
-      <p style="font-size: 1rem;">Through our outsourcing services, we provide you with full-time staff members,
+      <p style="    font-size: 1.2rem;">Through our outsourcing services, we provide you with full-time staff members,
         offshore in the
         Philippines,to
         complement your existing team. With an offshore staff member or team you can outsource numerous tasks and
         roles
-        which are chewing up your firm’s time and budget.</p>
-      <a href="" style="text-decoration:underline;font-size: 1rem;color: darkblue;font-weight: bold;">Free white paper:
-        88 Accounting Firm Tasks To Outsource<i class="bi bi-chevron-right"></i>
+        which are chewing up your firm's time and budget.</p>
+      <a href="checklist.html"
+        style="text-decoration:underline;    font-size: 1.2rem;color: darkblue;font-weight: bold;">Free
+        white paper:88 Accounting Firm Tasks To Outsource<i class="bi bi-chevron-right"></i>
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-chevron-right"
           viewBox="0 0 16 16">
           <path fill-rule="evenodd"
@@ -203,29 +225,31 @@
     </div>
   </div>
   <div class="header4">
-    <div class="container">
-      <h1 style="padding:5px;">
-        AGILE Ac outsourcing services provide
+    <div class=" container pattern-math-symbol">
+      <h1 style="padding:5px;color: #9aeae1;">
+        Agile Accounting outsourcing services provide
         your firm with highly skilled people for roles
         ranging from accounting to IT, administration
         and marketing
       </h1>
       <div class="row justify-content-center">
-        <div class="col-lg-4 col-md-6 col-sm-12 text" style="padding: 20px;">
-          <div id="card" style="height:100%;">
-            <a style="padding: 0; width: 100%;" href="accountant.html">
-              <img class="col "
-                style="padding:0%; border-top-left-radius:20px; border-top-right-radius:20px;width:100%;"
-                src="https://toaglobal.com/wp-content/uploads/2021/07/Accountant_Warm-Sand-1.jpg.webp" width="100%"></a>
+        <div class="col-lg-4 col-md-6 col-sm-12 text1" style="padding: 20px;">
+          <div id="card" style="height:95%;width:100%;padding-top:15px">
+            <div style="background:none;">
+              <a style="padding:0; width: 100%;text-align:center;" href="accountant.html">
+                <img class="col " style="padding:0%; border-radius: 50%;width:50%;height:100%;border-style: solid;background-color:
+                  rgb(238, 228, 228);border-color: #4a0466;border-width: 3px;"
+                  src="https://i.postimg.cc/q7CVqkNK/accontant.png"></a>
+            </div>
             <a href="accountant.html">
               <h4 style="font-size: 1.5rem;color: crimson;">
                 Accountant
               </h4>
-              <p>
+              <p style="font-size: 1rem;">
                 Accountants to handle accounting functions including sales invoicing, cashflows, payables and
                 receivables, and data entry.
               </p>
-              <p style="font-weight: bold;color: darkblue;">
+              <p style="font-weight: bold;color: darkblue;font-size: 1rem;">
                 Learn More<i class="bi bi-chevron-right"></i>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                   class="bi bi-chevron-right" viewBox="0 0 16 16">
@@ -237,22 +261,23 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6 col-sm-12 text" style="padding: 20px;">
-          <div id="card" style="height:100%;">
-            <a style=" padding: 0; width: 100%;" href="cpa.html">
+        <div class="col-lg-4 col-md-6 col-sm-12 text1" style="padding: 20px;">
+          <div id="card" style="height:95%;padding-top:15px">
+            <a style=" padding: 0; width: 100%;text-align:center;" href="cpa.html">
 
-              <img class="col" style="padding:0%; border-top-left-radius:20px; border-top-right-radius:20px;"
-                src="https://toaglobal.com/wp-content/uploads/2021/07/CPA.jpg.webp"></a>
+              <img class="col" style="padding:0%; border-radius:50%;width: 50%;border-style: solid;border-color: #4a0466;border-width: 3px;
+                background-color: rgb(238, 228, 228);" src="https://i.postimg.cc/bYRJym9t/cpaimage.png"
+                max-height="370px"></a>
 
             <a href="cpa.html">
               <h4 style="font-size: 1.5rem;color: crimson;">
                 CPA
               </h4>
-              <p>
+              <p style="font-size: 1rem;">
                 Chartered professional accountants who are ready to support your team with client-specific deliverables
                 and tasks.
               </p>
-              <p style="font-weight: bold;color: darkblue;">
+              <p style="font-weight: bold;color: darkblue;font-size: 1rem;">
                 Learn More<i class="bi bi-chevron-right"></i>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                   class="bi bi-chevron-right" viewBox="0 0 16 16">
@@ -264,22 +289,22 @@
           </div>
 
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 text" style="padding: 20px;">
-          <div id="card" style="height:100%;">
-            <a style="padding: 0; width: 100%;" href="Bookkeeper.html">
-
-              <img class="col" style="padding:0%; border-top-left-radius:20px; border-top-right-radius:20px;" src="
-                https://toaglobal.com/wp-content/uploads/2021/07/Ivan-Bookkeeper.jpg"> </a>
+        <div class="col-lg-4 col-md-6 col-sm-12 text1" style="padding: 20px;">
+          <div id="card" style="height:95%;padding-top:15px">
+            <a style="padding: 0; width: 100%;text-align: center;" href="Bookkeeper.html">
+              <img class="col" style="padding:0%; background-color: rgb(238, 228, 228);border-radius: 50%;width:50%; border-style:
+                solid;border-color: #4a0466;border-width: 3px;" src="
+                https://i.postimg.cc/2SgB9m2g/bookkeepersimg.png" max-height="370px"> </a>
 
             <a href="Bookkeeper.html">
               <h4 style="font-size: 1.5rem;color: crimson;">
                 Bookkeeper
               </h4>
-              <p>
+              <p style="font-size: 1rem;">
                 Our bookkeeping experts can help firms and organizations make better operating, investing and budgeting
                 decisions.
               </p>
-              <p style="font-weight: bold;color: darkblue;">
+              <p style="font-weight: bold;color: darkblue;font-size:1rem;">
                 Learn More<i class="bi bi-chevron-right"></i>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                   class="bi bi-chevron-right" viewBox="0 0 16 16">
@@ -291,21 +316,22 @@
           </div>
 
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 text" style="padding: 20px;">
-          <div id="card" style="height:100%;">
-            <a style="padding: 0; width: 100%;" href="administrator.html">
+        <div class="col-lg-4 col-md-6 col-sm-12 text1" style="padding: 20px;">
+          <div id="card" style="height:95%;padding-top:15px">
+            <a style="padding: 0; width: 100%;text-align:center;" href="administrator.html">
 
-              <img class="col" style="padding:0%; border-top-left-radius:20px; border-top-right-radius:20px;"
-                src="https://toaglobal.com/wp-content/uploads/2021/07/Edlyn-Canda-TOA.jpg"></a>
+              <img class="col" style="padding:0%; background-color: rgb(238, 228, 228);border-radius:50%;width:50%;border-style:
+                solid;border-color: #4a0466;border-width: 3px;" src="https://i.postimg.cc/Hs7h0hvJ/admins.png"
+                max-height="370px"></a>
 
             <a href="administrator.html">
               <h4 style="font-size: 1.5rem;color: crimson;">
                 Administrator
               </h4>
-              <p>
+              <p style="font-size: 1rem;">
                 Outsource administrative tasks like data entry, CRM maintenance, reporting and ad hoc activities.
               </p>
-              <p style="font-weight: bold;color: darkblue;">
+              <p style="font-weight: bold;color: darkblue; font-size: 1rem;">
                 Learn More<i class="bi bi-chevron-right"></i>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                   class="bi bi-chevron-right" viewBox="0 0 16 16">
@@ -317,22 +343,23 @@
           </div>
 
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 text" style="padding: 20px;">
-          <div id="card" style="height:100%;">
-            <a style="padding: 0; width: 100%;" href="virtualassisant.html">
+        <div class="col-lg-4 col-md-6 col-sm-12 text1" style="padding: 20px;">
+          <div id="card" style="height:95%;padding-top:15px">
+            <a style="padding: 0; width: 100%;text-align: center;" href="virtualassisant.html">
 
-              <img class="col" style="padding:0%; border-top-left-radius:20px; border-top-right-radius:20px;"
-                src="https://toaglobal.com/wp-content/uploads/2021/07/Tomas-Ricafort-Virtual-Assistant.jpg"></a>
+              <img class="col" style="padding:0%;background-color: rgb(238, 228, 228); border-radius:50%;width:50%;border-style:
+                solid;border-color: #4a0466;border-width: 3px;" src="https://i.postimg.cc/yNwMzCGz/virtual.png"
+                max-height="370px"></a>
 
             <a href="virtualassisant.html">
               <h4 style="font-size: 1.5rem;color: crimson;">
                 Virtual Assistant
               </h4>
-              <p>
+              <p style="font-size: 1rem;">
                 Our VA can help with day-to-day tasks like managing your calendar, office administra-tion,travel
                 arrangements and scheduling meetings.
               </p>
-              <p style="font-weight: bold;color: darkblue;">
+              <p style="font-weight: bold;color: darkblue;font-size: 1rem;">
                 Learn More<i class="bi bi-chevron-right"></i>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                   class="bi bi-chevron-right" viewBox="0 0 16 16">
@@ -344,22 +371,20 @@
           </div>
         </div>
       </div>
-      <a href="All solutions.html"><button id="lastcards" class="buttonstyl">Explore all Solutions</button></a>
+      <a href="All solutions.html"><button class="buttonstyl"><span>Explore all Solutions</span></button></a>
     </div>
   </div>
   <div class="header5">
-    <div class="container contain">
-      <div class="boxes">
-
-        <div class="box">
-
-          <!-- <div class="boximage"> -->
-          <img src="https://toaglobal.com/wp-content/uploads/2021/07/Meet-Our-Talent-Charisse.jpeg.webp">
-          <!-- </div> -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12" style="align-self: flex-end;">
+          <img
+            src="https://st4.depositphotos.com/16405760/23692/i/450/depositphotos_236929236-stock-photo-studio-portrait-beautiful-young-attractive.jpg"
+            style="width:100%;box-shadow: 10px 10px rgba(76, 0, 130, 0.356);border-radius: 10px;">
         </div>
 
-        <div class="box h5matter">
-          <h1 style="color:rgba(46, 7, 83, 0.819);padding-bottom:7px;">
+        <div class="col-lg-6 col-md-12 col-sm-12 h5matter" style="text-align:left;padding:10px;">
+          <h1 style="color:#4a0466;padding-bottom:7px;padding-top:10px;">
             Meet our Talent
           </h1>
           <p>
@@ -373,12 +398,12 @@
             Our team are experienced, highly educated, and access continual professional development at the Ab2
           </p>
           <p>
-            If your team are remote already, consider adding staff offshore. You can’t go wrong with learning more about
-            AGILE Global’s outsourcing services for the accounting industry.
+            If your team are remote already, consider adding staff offshore. You can't go wrong with learning more about
+            AGILE Global's outsourcing services for the accounting industry.
           </p>
           <a href="meetourtalent.html"
-            style="text-decoration:underline;text-decoration-color:coral;font-size: 1rem;font-weight: bold;">Meet our
-            Talent<i class="bi bi-chevron-right"></i>
+            style="text-decoration:underline;text-decoration-color:coral;font-size: 1.2rem;font-weight: bold;padding:0px;">Meet
+            our Talent<i class="bi bi-chevron-right"></i>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
               class="bi bi-chevron-right" viewBox="0 0 16 16">
               <path fill-rule="evenodd"
@@ -390,12 +415,12 @@
     </div>
   </div>
   <div>
-    <div class="container contain header6">
-      <div class="boxes">
-        <div class="box">
+    <div class="container contain header6" style="box-shadow:20px 20px rgb(168, 176, 197);width:70%">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12" style="align-self:center;text-align:center;">
           <img src="https://toaglobal.com/wp-content/uploads/2021/07/Ab2-logo-1.png.webp" id="h6image">
         </div>
-        <div class="box" id="h6matter">
+        <div class="col-lg-6 col-md-6 col-sm-12" id="h6matter">
           <h1 color="blue" style="padding-bottom:25px ;">
             <bold>Customized Training</bold>
           </h1>
@@ -404,7 +429,8 @@
             (including Xero, QuickBooks ) via short courses, industry qualifications
             and certifications.</p>
           <a href=""
-            style="text-decoration:underline;text-decoration-color:coral; font-size: 1rem;font-weight: bold;">Learn More
+            style="text-decoration:underline;text-decoration-color:coral; font-size: 1.2rem;font-weight: bold;padding:0px;">Learn
+            More
             <i class="bi bi-chevron-right"></i>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
               class="bi bi-chevron-right" viewBox="0 0 16 16">
@@ -416,15 +442,16 @@
       </div>
     </div>
   </div>
-  <div class="header7" style="background-color:rgb(234, 116, 116);">
-    <div class="container contain">
-      <div class="boxes">
-        <div class="box justify-content-end" style="justify-content:end;padding-bottom:0px;">
-          <img src="https://toaglobal.com/wp-content/uploads/2021/10/CTA-lady_with_glasses.png.webp" height="500"
-            style="margin-bottom:0px;">
+  <div class="header7" style="background-color:#eb9a9a;padding:0%;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12 order-lg-0 order-md-1 order-sm-1 order-last"
+          style="padding-bottom:0px; text-align:last;align-self:flex-end;">
+          <img src="https://toaglobal.com/wp-content/uploads/2021/10/CTA-lady_with_glasses.png.webp"
+            style="width:100%;max-width:400px;">
         </div>
-        <div class="box" id="h5matter" style="padding:50px;">
-          <h1 style="color:rgb(251, 248, 255);font-size:1.7rem;">
+        <div class="col-lg-6 col-md-12 col-sm-12" id="h5matter" style="padding:50px;">
+          <h1 style="color:rgb(251, 248, 255);">
             Ready To Find Out More?
           </h1>
           <p style="color:rgb(251, 248, 255);">
@@ -435,10 +462,10 @@
             capacity, margins and profits.
           </p>
 
-          <button class="buttonstyl md-button strategy-session-trigger"
-            style="Background-color:rgb(71, 7, 71);cursor:pointer; font-size: 1rem;">GET YOUR FREE OUTSOURCING
-            STRATEGY</button>
+          <button class="buttonstyl md-button strategy-session-trigger but" style="Background-color:rgb(80, 23, 80);"
+            onclick="toggleForm()"><span>GET YOUR FREE OUTSOURCING STRATEGY</span></button>
         </div>
+
       </div>
     </div>
   </div>
@@ -450,7 +477,7 @@
           <div id="card" style="width:100%;height: 100%;">
             <a style="padding: 0; width: 100%;" href="">
               <img class="col " style="padding:0%; border-top-left-radius:20px; border-top-right-radius:20px;"
-                src="https://toaglobal.com/wp-content/uploads/2021/07/Accountant_Warm-Sand-1.jpg.webp"></a>
+                src="https://i.postimg.cc/HW2cPZqx/accountant.png" height="300px"></a>
             <a href="product details.html">
               <h4>
                 Accountant
@@ -475,7 +502,7 @@
             <a style="padding: 0; width: 100%; " href="">
 
               <img class="col" style="padding:0%; border-top-left-radius:20px; border-top-right-radius:20px;"
-                src="https://toaglobal.com/wp-content/uploads/2021/07/Ivan-Bookkeeper.jpg"></a>
+                src="https://i.postimg.cc/2SgB9m2g/bookkeepersimg.png" height="300px"></a>
 
             <a href="product details.html">
               <h4>
@@ -501,7 +528,7 @@
             <a style="padding: 0; width: 100%;" href="">
 
               <img class="col" style="padding:0%; border-top-left-radius:20px; border-top-right-radius:20px;"
-                src="https://toaglobal.com/wp-content/uploads/2021/07/CPA.jpg.webp"></a>
+                src="https://i.postimg.cc/bYRJym9t/cpaimage.png" height="300px"></a>
 
             <a href="product details.html">
               <h4>
@@ -528,7 +555,7 @@
             <a style="padding: 0; width: 100%;" href="">
 
               <img class="col" style="padding:0%; border-top-left-radius:20px; border-top-right-radius:20px;"
-                src="https://toaglobal.com/wp-content/uploads/2021/07/Edlyn-Canda-TOA.jpg"></a>
+                src="https://i.postimg.cc/Hs7h0hvJ/admins.png" height="300px"></a>
 
             <a href="product details.html">
               <h4>
@@ -560,20 +587,30 @@
   <footer class="footer">
     <div class="container bottom_border">
       <div class="row">
-        <div class=" col-lg-2 col-md-4 col-sm-6" style="padding:25px;">
+        <div class="col-md-4 col-sm-6 col-lg-2" style="padding:25px;">
 
-          <img src="logoagilel.png" style="width:50%; padding: 5px;">
-          <p><i class="fa fa-location-arrow"></i> Location comes here</p>
-          <p><i class="fa fa-phone"></i> contact number </p>
-          <p><i class="fa fa fa-envelope"></i> email id comes here </p>
+          <a href="index.html"><img src="logoagilel.png" style="width:60%; padding: 0px;"></a>
+          <p style="font-size: 0.8rem;"><i class="fa fa-location-arrow"></i> Location comes here</p>
+          <p style="font-size: 0.8rem;"><i class="fa fa-phone-alt "></i> <a href="tel:+1 (408)214-9890" target=""
+              class="in-grid-item cardClick" data-wpel-link="internal"
+              style="font-size:0.7rem;color: white;padding:0%;">
+              +1-(408) 214-9890</a>
+          </p>
+
+          <p style="font-size: 0.8rem;"><i class="fa fa fa-envelope"></i> <a href="mailto:info@agileac.com"
+              style="font-size:0.7rem;color: white;padding:0%;">
+              info@agileac.com </a> </p>
         </div>
+        <div class="col-lg-2 col-md-4 col-sm-6"></div>
 
-
-        <div class="  col-lg-2 col-md-4 col-sm-6">
-          <h5 class="headin5_amrc col_white_amrc pt2">company</h5>
+        <div class="col-md-4 col-sm-6 col-lg-2">
+          <h5 class="headin5_amrc col_white_amrc pt2" style="font-size: 0.9rem;color:cyan;">Company</h5>
 
           <ul class="footer_ul_amrc">
-            <li><a href="The Agile ac difference.html">The AGILE Ac difference</a></li>
+            <li><a style="padding:0px;width: auto;" href="The Agile ac difference.html">The
+                AGILE
+                Ac difference</a>
+            </li>
             <li><a href="meetourtalent.html">Meet our talent</a></li>
             <li><a href="who_we_are.html">Who we are</a></li>
           </ul>
@@ -581,8 +618,8 @@
         </div>
 
 
-        <div class="  col-lg-2 col-md-4 col-sm-6">
-          <h5 class="headin5_amrc col_white_amrc pt2">Solutions</h5>
+        <div class="col-md-4 col-sm-6 col-lg-2">
+          <h5 class="headin5_amrc col_white_amrc pt2" style="font-size: 0.9rem;color:cyan;">Solutions</h5>
 
           <ul class="footer_ul_amrc">
             <li><a href="accountant.html">Accountant</a></li>
@@ -590,28 +627,28 @@
             <li><a href="Bookkeeper.html">Bookkeeper</a></li>
             <li><a href="administrator.html">Administrator</a></li>
             <li><a href="virtualassisant.html">Virtual assistant</a></li>
-            <li><a href=" ">Locally Trained Talent NA</a></li>
+            <li><a href="local trained talent.html">Locally Trained Talent NA</a></li>
             <li><a href="All solutions.html">All solutions</a></li>
           </ul>
 
         </div>
 
-        <div class="  col-lg-2 col-md-4 col-sm-6">
-          <h5 class="headin5_amrc col_white_amrc pt2">Resources</h5>
+        <div class="col-md-4 col-sm-6 col-lg-2">
+          <h5 class="headin5_amrc col_white_amrc pt2" style="font-size: 0.9rem;color:cyan;">Resources</h5>
 
           <ul class="footer_ul_amrc">
-            <li><a href="">Book a strategy session</a></li>
-            <li><a href="">Outsourcing checklist</a></li>
-            <li><a href="">Remote team report</a></li>
+            <li><a href="book a statagy session.html">Book a strategy session</a></li>
+            <li><a href="checklist.html">Outsourcing checklist</a></li>
+            <li><a href="remote accounting team.html">Remote team report</a></li>
             <li><a href="">Virtual assistant guide</a></li>
-            <li><a href="">Retain and grow talent guide</a></li>
-            <li><a href="">Scale and grow your accounting firm</a></li>
+            <li><a href="retainandgrow.html">Retain and grow talent guide</a></li>
+            <li><a href="scaleandgrow.html">Scale and grow your accounting firm</a></li>
           </ul>
 
         </div>
-        <div class="  col-lg-2 col-md-4 col-sm-6">
-          <h5 class="headin5_amrc col_white_amrc pt2">
-            AGILE Ac Links
+        <div class="col-md-4 col-sm-6 col-lg-2">
+          <h5 class="headin5_amrc col_white_amrc pt2" style="font-size: 0.9rem;color:cyan;">
+            Agile Accounting Links
           </h5>
 
           <ul class="footer_ul_amrc">
@@ -623,11 +660,27 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container" style="text-align:left;">
 
-      <p class="text-center ">Copyright @2022 | Designed With by <a href="#"
-          style="color: white;font-weight: bold;">AGILE Ac</a></p>
-
+      <div class="row">
+        <div class="col-lg-6 col-sm-12">
+          <p class=" text-center flo" style="font-size: 0.7rem;">All Rights Reserved Agile Accounting @2022
+          </p>
+        </div>
+        <div class="col-lg-6 col-sm-12" style="float:flex-end;">
+          <a href=" privacypolicy.html" class="text-center"
+            style="font-size: 0.7rem;padding:0%;padding-right:10px;color: white;">Privacy
+            policy</a>
+          <a href="Accessibility Statement.html" class="text-center"
+            style="font-size: 0.7rem;padding:0%;padding-right:10px;color: white;">Accessibility
+            statement</a>
+          <a href="contact us.html" class="text-center"
+            style="font-size: 0.7rem;padding:0%;padding-right:10px;color: white;">Contact
+            us</a>
+          <a href="Terms of Use.html" class="text-center" style="font-size: 0.7rem;padding:0%;color: white;">Terms of
+            use</a>
+        </div>
+      </div>
       <ul class="social_footer_ul">
         <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
         <li><a href=""><i class="fab fa-twitter"></i></a></li>
@@ -641,25 +694,26 @@
   <script src="app.js">
   </script>
   <script>
-    const scriptURL =
-      'https://script.google.com/macros/s/AKfycbzu1osijDly60C8Pf1WVKXCz8zNQSmHCg-h6Tq3irY1ey9dFA9Kl5lZnCXlSB7IRtg2SA/exec'
-    const form = document.forms['google-sheet']
-
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, {
-          method: 'POST',
-          body: new FormData(form)
-        })
-        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-  <script>
     function toggleForm() {
       document.body.classList.toggle('activeForm');
     }
   </script>
+  <script>
+    function toggleform() {
+      document.body.classList.toggle('navbar-links-active');
+    }
+  </script>
+  <script>
+    function classtoggle() {
+      const navs = document.querySelectorAll('.navbar-links')
+
+      navs.forEach(nav => nav.classList.remove('navbar-links-active'));
+    }
+
+    document.querySelector('.close-button')
+      .addEventListener('click', classtoggle);
+  </script>
+  <script src="form.js"></script>
 </body>
 
 </html>

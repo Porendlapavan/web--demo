@@ -10,7 +10,7 @@ body {
 
 
 .main_header {
-  background-color: #b4e9e1;
+  background-color: #b4e9e153;
   /* text-align: center; */
   padding: 10px;
   padding-bottom: 0%;
@@ -108,17 +108,7 @@ body {
   transition: 0.5s;
 }
 
-.show {
-  background: blue;
-  width: 20%;
-  height: 100vh;
-  /* /z-index: 0; / Stay on top */
-  top: 0px;
-  /* Stay at the top */
-  right: 0%;
-  position: fixed;
-  transition: 0.5s;
-}
+
 
 #sidebar {
   display: flex;
@@ -734,6 +724,10 @@ a:hover {
     position: absolute;
   }
 
+  .show {
+    display: contents;
+  }
+
   nav ul {
     padding: 10px;
     background: rgb(5, 5, 20);
@@ -741,12 +735,13 @@ a:hover {
     top: 0px;
     bottom: -15px;
     right: -10px;
+    width: 100%;
     opacity: 2;
     z-index: 3;
-    width: 75%;
     height: auto;
     overflow-y: scroll;
     border-radius: 0;
+
   }
 
   .colr {
@@ -763,18 +758,14 @@ a:hover {
   nav ul li ul li a {
     width: fit-content;
     display: flex;
-    width: 100px;
   }
 
   nav ul li ul li a:hover {
     background-color: rgb(55, 52, 52);
     border-style: solid;
     border-color: white;
-    transform: scale(1.1);
-  }
+    transform: scale(1.091);
 
-  nav ul li ul li ul {
-    width: fit-content;
   }
 
   .close-button {
@@ -784,6 +775,10 @@ a:hover {
     top: 5px;
     right: 0px;
     opacity: 2;
+    display: flex;
+    align-self: flex-end;
+    cursor: pointer;
+    position: absolute;
   }
 
   nav ul li {
@@ -1041,6 +1036,17 @@ body h1 {
   letter-spacing: 0.06ch;
 }
 
+.qualification div {
+  box-shadow: 5px 5px rgb(116, 114, 114);
+}
+
+.qualification h1 {
+  font-size: 1.5rem;
+}
+
+.qualification p {
+  font-size: 1rem;
+}
 
 
 body p {

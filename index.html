@@ -76,33 +76,31 @@
 
 <body>
   <div style="background-color:#4a0466;height: 1rem;"></div>
-
   <header class="main_header">
     <div class="container">
       <div class="outer-flex">
-        <img src="logoagilel.png" style="max-width: 100px; padding-left:10px;border-radius: 0px; max-height: 80px;">
         <nav class="navbar">
+          <img src="logoagilel.png" style="max-width: 100px; padding-left:10px;border-radius: 0px; max-height: 80px;">
           <a href="#" class="toggle-buttons" style="color: #4a0466; z-index:1;">
             <i class="fas fa-bars"></i></a>
           <div class="navbar-links">
-
             <ul>
               <a href="#" class="close-button">&times;</a>
-              <li><a style="font-size:0.7rem;text-align: left;" class="colr" href="#">company <i
-                    class="arrow down"></i></a>
-                <ul class="text" style="z-index:1;">
+              <li><a style="font-size:0.7rem;text-align: left;" onclick="myfunction1()" class=" colr" href="#">company
+                  <i class="arrow down"></i></a>
+                <ul id="myDropdown" class="text" style="z-index:1;">
                   <li><a style="text-align: left;" href="The Agile ac difference.html">The Agile Accounting
                       difference</a></li>
                   <li><a style="text-align: left;" href="meetourtalent.html">Meet our talent</a></li>
                   <li><a style="text-align: left;" href="who_we_are.html">Who we are</a></li>
                   <li><a style="text-align: left;" href="contact us.html">contact us</a></li>
-                  <li><a style="text-align: left;" href=""><i class='fas fa-external-link-alt'></i> AGILE Ac
-                      careers</a></li>
+                  <li><a style="text-align: left;" href=""><i class='fas fa-external-link-alt'></i> AGILE Ac careers</a>
+                  </li>
                 </ul>
               </li>
-              <li><a style="font-size:0.7rem; width: auto;text-align:left;" class="colr" href="#">Solutions <i
-                    class="arrow down" style="font-size: smaller;"></i></a>
-                <ul class="text" style="z-index:1;">
+              <li><a style="font-size:0.7rem; width: auto;text-align:left;" onclick="myfunction2()" class="colr"
+                  href="#">Solutions <i class="arrow down" style="font-size: smaller;"></i></a>
+                <ul id="myDropdown1" class="text" style="z-index:1;">
                   <li><a style="text-align: left;" href="accountant.html">Accountant</a></li>
                   <li><a style="text-align: left;" href="Bookkeeper.html">Book keeper</a></li>
                   <li><a style="text-align: left;" href="administrator.html">Administrator</a></li>
@@ -112,41 +110,41 @@
                   <li><a style="text-align: left;" href="All solutions.html">All solutions</a></li>
                 </ul>
               </li>
-              <li><a style="font-size:0.7rem;text-align:left;" href="#" class="colr">Resources <i
-                    class="arrow down"></i></a>
-                <ul class="text" style="z-index:1;">
+              <li><a style="font-size:0.7rem;text-align:left;" onclick="myfunction3()" href="#" class="colr">Resources
+                  <i class="arrow down"></i></a>
+                <ul id="myDropdown2" class="text" style="z-index:1;">
 
 
-                  <li style="text-align:left;  ;font-weight: bold;color: rgb(174, 242, 16);font-size: 0.7rem;">
+                  <li style="text-align:left;font-weight: bold;color: rgb(174, 242, 16);font-size: 0.7rem;">
                     News and Events
                   </li>
-                  <li><a style="text-align: left;  ;" href="">Announcements</a></li>
+                  <li><a style="text-align: left;" href="">Announcements</a></li>
                   <li style="text-align: left;font-weight: bold;  ;color: rgb(174, 242, 16);font-size: 0.7rem;">
                     Education</li>
-                  <li><a style="text-align: left;  ;" href="bolgs.html">Blog</a></li>
-                  <li><a style="text-align: left;  ;" href="">Podcasts</a></li>
+                  <li><a style="text-align: left;" href="bolgs.html">Blog</a></li>
+                  <li><a style="text-align: left;" href="">Podcasts</a></li>
 
 
-                  <li style="border-radius:0px 0px 0 0;text-align: left;  ;font-weight:
+                  <li style="border-radius:0px 0px 0 0;text-align: left;  font-weight:
                       bold;color:rgb(174, 242, 16);font-size: 0.7rem;">
                     Free Tools
                   </li>
-                  <li><a style="text-align: left;  ;" href="book a statagy session.html">Book a
+                  <li><a style="text-align: left;" href="book a statagy session.html">Book a
                       strategy session</a></li>
-                  <li><a style="text-align: left;  ;" href="checklist.html">Outsourcing checklist</a>
+                  <li><a style="text-align: left;" href="checklist.html">Outsourcing checklist</a>
                   </li>
-                  <li><a style="text-align: left;  ;" href="remote accounting team.html">Remote team
+                  <li><a style="text-align: left;" href="remote accounting team.html">Remote team
                       report</a></li>
-                  <li><a style="text-align: left;  ;" href="">Virtual assistant report</a></li>
-                  <li><a style="text-align: left;  ;" href="retainandgrow.html">Retain and grow talent
+                  <li><a style="text-align: left;" href="">Virtual assistant report</a></li>
+                  <li><a style="text-align: left;" href="retainandgrow.html">Retain and grow talent
                       guide</a></li>
-                  <li><a style="text-align: left;  ;" href="scaleandgrow.html">Scale and grow your
+                  <li><a style="text-align: left;" href="scaleandgrow.html">Scale and grow your
                       accounting
                       firm</a></li>
 
                 </ul>
               </li>
-              <li>
+              <li class="searchbut">
                 <label class="topnov" style="background:none;">
                   <span class="screen-reader-text"></span>
                   <input type="search" class="search-field" placeholder="Search" value="" name="s" title="Search for:"
@@ -699,11 +697,6 @@
     }
   </script>
   <script>
-    function toggleform() {
-      document.body.classList.toggle('navbar-links-active');
-    }
-  </script>
-  <script>
     function classtoggle() {
       const navs = document.querySelectorAll('.navbar-links')
 
@@ -714,6 +707,26 @@
       .addEventListener('click', classtoggle);
   </script>
   <script src="form.js"></script>
+  <script>
+    function myfunction1() {
+      document.getElementById("myDropdown").classList.toggle("show");
+      // if (document.getElementById("myDropdown1").classList.contains("show")) {
+      //   document.getElementById("myDropdown1").classList.remove("show");
+      // }
+      // if (document.getElementById("myDropdown2").classList.contains("show")) {
+      //   document.getElementById("myDropdown2").classList.remove("show");
+      // }
+
+    }
+
+    function myfunction2() {
+      document.getElementById("myDropdown1").classList.toggle("show");
+    }
+
+    function myfunction3() {
+      document.getElementById("myDropdown2").classList.toggle("show");
+    }
+  </script>
 </body>
 
 </html>
